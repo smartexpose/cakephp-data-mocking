@@ -48,9 +48,7 @@
             <div class="row">
                 <?= $this->Flash->render() ?>
                 <?= $this->fetch('content'); ?>
-                <?php if ($this->request->params['action'] !== 'login'): ?>
-                    <?= $this->cell('Sidebar') ?>
-                <?php endif; ?>
+                
             </div>
         </div>
         <?= $this->Html->script(['bootstrap']); ?>
